@@ -1,212 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ani Sharma</title>
-  <meta name="description" content="Personal Website" />
   <style>
-    @import url('');
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background: #f5f7fa;
-      color: #222;
-      line-height: 1.6;
-      overflow-x: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1d1d1f;
+      background-color: #fff;
+      line-height: 1.5;
     }
 
     header {
-      background: #2c3e50;
-      color: #ecf0f1;
       text-align: center;
-      padding: 60px 20px 40px;
-      animation: fadeIn 1s ease forwards;
-    }
-
-    header img {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #ecf0f1;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      padding: 60px 20px 20px;
     }
 
     header h1 {
-      margin: 0;
+      font-size: 3rem;
       font-weight: 600;
-      font-size: 2.75rem;
-      letter-spacing: 1.5px;
+      margin: 0;
     }
 
     header p {
-      margin: 10px 0 0;
-      font-weight: 400;
       font-size: 1.25rem;
-      color: #bdc3c7;
-    }
-
-    nav {
-      background: #34495e;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      padding: 15px 0;
-      box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-      animation: fadeIn 1.5s ease forwards;
-    }
-
-    nav a {
-      color: #ecf0f1;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: #1abc9c;
-      outline: none;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 40px auto 80px;
-      padding: 0 20px;
-      animation: fadeIn 2s ease forwards;
+      color: #6e6e73;
+      margin-top: 10px;
     }
 
     section {
-      margin-bottom: 60px;
+      max-width: 980px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    h2 {
-      font-weight: 600;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #2c3e50;
-      border-bottom: 2px solid #1abc9c;
-      padding-bottom: 6px;
-      width: fit-content;
+    /* Gallery styles */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
-    p {
-      font-size: 1.1rem;
-      color: #444;
-      margin-bottom: 12px;
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
     }
 
-    ul {
-      padding-left: 20px;
-      color: #444;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-      font-size: 1.05rem;
-    }
-
-    a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-
-    a:hover,
-    a:focus {
-      text-decoration: underline;
-      outline: none;
+    .gallery img:hover {
+      transform: scale(1.02);
     }
 
     footer {
       text-align: center;
-      padding: 25px 10px;
-      background: #2c3e50;
-      color: #bdc3c7;
+      padding: 40px;
       font-size: 0.9rem;
-      user-select: none;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      nav {
-        gap: 16px;
-        padding: 12px 0;
-      }
-      nav a {
-        font-size: 0.9rem;
-      }
-      main {
-        margin: 30px auto 60px;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
+      color: #86868b;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="www.linkedin.com/in/anisharmaus" alt="Ani Sharma Profile Photo" />
     <h1>Ani Sharma</h1>
-    <p>Life sciences person living in San Francisco</p>
+    <p>Personal site & photo gallery</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <section>
+    <h2 style="font-size:2rem; font-weight:500; margin-bottom:20px;">About Me</h2>
+    <p>
+      A biopharma strategy and operations professional with experience across R&D strategy & operations, commercial development, and CMC/manufacturing roles. I’m passionate about building and scaling life sciences products, enjoying the outdoors, and spending time in San Francisco with my wife and two cats.
+    </p>
+  </section>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>A biopharma strategy and operations professional with experience across R&D strategy & operations, commercial development, and CMC/manufacturing roles. I’m passionate about building and scaling life sciences products, enjoying the outdoors, and spending time in San Francisco with my wife and two cats.</p>
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Here are some highlights of my work, writing, and projects. (Work in progress)</p>
-      <ul>
-        <li><a href="#">Project 1</a> – Description here</li>
-        <li><a href="#">Project 2</a> – Description here</li>
-        <li><a href="#">Project 3</a> – Description here</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to connect? Email me at <a href="mailto:yourname@example.com">yourname@example.com</a> or find me on <a href="https://www.linkedin.com/in/anisharmaus" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-    </section>
-  </main>
+  <section>
+    <h2 style="font-size:2rem; font-weight:500; margin-bottom:20px;">Photo Gallery</h2>
+    <div class="gallery">
+      <!-- Replace these with iCloud photos later -->
+      <img src="https://via.placeholder.com/800x600?text=Photo+1" alt="Photo 1">
+      <img src="https://via.placeholder.com/800x600?text=Photo+2" alt="Photo 2">
+      <img src="https://via.placeholder.com/800x600?text=Photo+3" alt="Photo 3">
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Ani Sharma. All rights reserved.
+    &copy; 2025 Ani Sharma
   </footer>
+
 </body>
 </html>
